@@ -122,8 +122,8 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Formulaires */
-input, textarea {
+/* Formulaires généraux */
+input, textarea, select {
     width: 100%;
     padding: 12px 15px;
     margin: 10px 0 20px 0;
@@ -131,9 +131,10 @@ input, textarea {
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     border-color: #00a86b;
     box-shadow: 0 0 8px rgba(0, 168, 107, 0.3);
 }
@@ -148,29 +149,63 @@ li {
     margin-bottom: 10px;
 }
 
-
 /* Container flex pour liste + image */
 .product-row {
     display: flex;
-    align-items: center; /* centre verticalement la liste et l'image */
-    gap: 400px;           /* espace entre liste et image */
-    flex-wrap: wrap;      /* responsive : passe à la ligne sur petit écran */
+    align-items: center;
+    gap: 400px;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .product-row ul {
-    flex: none; /* taille automatique selon le contenu */
-    min-width: 300px; /* largeur minimale pour la liste */
+    flex: none;
+    min-width: 300px;
 }
 
 .product-image {
-    max-width: 200px;    /* taille maximale de l'image */
-    width: 100%;         /* s'adapte si écran plus petit */
-    border-radius: 12px; /* coins arrondis */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* shadow box */
+    max-width: 200px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* ========================== */
+/* Styles spécifiques Calculateur */
+/* ========================== */
+.calculator-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin: 40px auto;
+    max-width: 700px;
+}
 
+.calculator-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calculator-container label {
+    font-weight: 600;
+    color: #333;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f0faf7;
+    border: 1px solid #00a86b;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.result h2 {
+    color: #00a86b;
+    margin-bottom: 15px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -181,5 +216,9 @@ li {
 
     section {
         padding: 50px 15px;
+    }
+
+    .calculator-container {
+        padding: 25px 20px;
     }
 }

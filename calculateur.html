@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Énergie - EcoGel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoGel</h1>
+        <nav>
+            <a href="home.html">Accueil</a>
+            <a href="products.html">Produits</a>
+            <a href="calculateur.html">Calculateur</a>
+            <a href="team.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <h1>Calculateur de besoins énergétiques</h1>
+        <p>Estimez vos besoins en glucides et le nombre de gels EcoGel pour votre prochaine course.</p>
+        <label for="time">Temps d'effort estimé (en heures) :</label>
+        <input type="number" id="time" min="0.5" step="0.5" required>
+
+        <label for="drink">Avez-vous accès à des boissons énergétiques pendant la course ?</label>
+        <select id="drink">
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+        </select>
+
+        <button onclick="calculate()">Calculer</button>
+        
+        <div class="result" id="result"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
