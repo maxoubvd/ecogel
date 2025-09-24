@@ -148,6 +148,30 @@ li {
     margin-bottom: 10px;
 }
 
+
+/* Container flex pour liste + image */
+.product-row {
+    display: flex;
+    align-items: center; /* centre verticalement la liste et l'image */
+    gap: 400px;           /* espace entre liste et image */
+    flex-wrap: wrap;      /* responsive : passe à la ligne sur petit écran */
+    margin-bottom: 20px;
+}
+
+.product-row ul {
+    flex: none; /* taille automatique selon le contenu */
+    min-width: 300px; /* largeur minimale pour la liste */
+}
+
+.product-image {
+    max-width: 200px;    /* taille maximale de l'image */
+    width: 100%;         /* s'adapte si écran plus petit */
+    border-radius: 12px; /* coins arrondis */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* shadow box */
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
     nav {
