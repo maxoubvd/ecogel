@@ -36,14 +36,14 @@ function calculate() {
     carbsPerHour = 90;
     gels = Math.ceil(time * (60/70)); // rythme 1 gel par heure
     recommendations = "<li>Pensez à alternez le sucré avec du salé (par exemple du gâteau de riz, barres salées, etc.) cela évite l'ecoeurement et vous permet de continuer à bien s'alimenter au fil des heures</li><li>Buvez régulièrement des boissons énergétique (en alternant avec de l'eau)</li>";
-    category = "Endurance très longue";
+    category = "Ultra Endurance";
     }
 
     document.getElementById("result").innerHTML = `
     <h2>Résultats</h2>
-    <p><strong>Catégorie :</strong> ${category}</p>
-    <p><strong>Besoins énergétiques estimés :</strong> ${carbsPerHour} g de glucides/heure</p>
-    <p><strong>Nombre de gels EcoGel recommandés :</strong> ${gels} gels</p>
+    <p>Catégorie :<strong> ${category}</strong></p>
+    <p>Besoins énergétiques estimés :<strong> ${carbsPerHour} g de glucides/heure</strong></p>
+    <p>Nombre de gels EcoGel recommandés :<strong> ${gels} gels</strong></p>
     <h3>Recommandations :</h3>
     <ul>
         <h4>Ce calculateur effectue une simple estimation, pour vous guider !</h4>
@@ -53,5 +53,7 @@ function calculate() {
         <h4>Votre course est particulièrement longue, voici quelques conseils supplémentiares :</h4>
         ${recommendations}
     </ul>
+    <p></p>
+    <button onclick="location.href='products.html'">Découvrir nos produits</button>
     `;
 }
