@@ -35,7 +35,7 @@ function calculate() {
     // Endurance "très longue"
     carbsPerHour = 90;
     gels = Math.ceil(time * (60/70)); // rythme 1 gel par heure
-    recommendations = "<li>Pensez à alternez le sucré avec du salé (par exemple du gâteau de riz, barres salées, etc.) cela évite l'ecoeurement et vous permet de continuer à bien s'alimenter au fil des heures</li><li>Buvez régulièrement des boissons énergétique (en alternant avec de l'eau)</li>";
+    recommendations = "        <h4>Votre course est particulièrement longue, voici quelques conseils supplémentiares :</h4><li>Pensez à alternez le sucré avec du salé (par exemple du gâteau de riz, barres salées, etc.) cela évite l'ecoeurement et vous permet de continuer à bien s'alimenter au fil des heures</li><li>Buvez régulièrement des boissons énergétique (en alternant avec de l'eau)</li>";
     category = "Ultra Endurance";
     }
 
@@ -50,7 +50,6 @@ function calculate() {
         <li>Basé sur les recommandations scientifiques, il faut environ 60g de glucides par heure pour efforts d'endurance de moins de 2h. Ainsi que 90 g/h pour efforts plus longs.</li>
         <li>Ces recommandations sont généralisées, en vérité chacun s'alimente de la manière qui lui convient le mieux. C'est pour ça qu'il faut que vous testiez votre stratégie de nutrition à l'entraînement, afin de trouver les quantités et les goûts qui vous conviennent le mieux.</li>
         <li>Un gel EcoGel (100ml) contient ~70 g de glucides.</li>
-        <h4>Votre course est particulièrement longue, voici quelques conseils supplémentiares :</h4>
         ${recommendations}
     </ul>
     <p></p>
